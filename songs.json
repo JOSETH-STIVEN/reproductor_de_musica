@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Déjame Ir",
+    "artist": "Nampa Básico",
+    "src": "audio/dejame_ir.mp3",
+    "cover": "img/nampa.jpg"
+  },
+  {
+    "title": "Hawái",
+    "artist": "Maluma",
+    "src": "audio/hawai.mp3",
+    "cover": "img/maluma.jpg"
+  },
+  {
+    "title": "Propuesta Indecente",
+    "artist": "Romeo Santos",
+    "src": "audio/propuesta_indecente.mp3",
+    "cover": "img/romeo.jpg"
+  },
+  {
+    "title": "La Melodía",
+    "artist": "Nampa Básico",
+    "src": "audio/la_melodia.mp3",
+    "cover": "img/nampa2.jpg"
+  },
+  {
+    "title": "Felices los 4",
+    "artist": "Maluma",
+    "src": "audio/felices_los_4.mp3",
+    "cover": "img/maluma2.jpg"
+  },
+  {
+    "title": "Eres Mía",
+    "artist": "Romeo Santos",
+    "src": "audio/eres_mia.mp3",
+    "cover": "img/romeo2.jpg"
+  }
+]
