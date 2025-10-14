@@ -1,56 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reproductor de Música</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body id="body">
-    <div id="player_contenedor">
-
-      <section id="menu_superior">
-        <button id="btn_repetir">🔁</button>
-        <button id="btn_configuracion">⚙️</button>
-        <button id="btn_texto">🅰️</button>
-        <button id="btn_temporizador">⏰</button>
-        <button id="btn_compartir">🔗</button>
-      </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantalla de Inicio</title>
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+<body id="body">
 
 
-      <section id="imagen_cancion">
-        <img id="portada" src="/img/cuatroBabys.jpg" alt="Portada del álbum" />
-      </section>
+  <section id="home">
+    <div class="home-container">
+      <img src="img/Adobe Express - file.png" alt="Auriculares" class="home-image">
 
- 
-      <section id="info_cancion">
-        <h1 id="titulo">Cuatro Babys</h1>
-        <h2 id="artista">Maluma</h2>
-      </section>
+      <div class="home-texto">
+        <h2>disfruta tu <span>música</span>, disfruta tu vida</h2>
+        <p>Escucha tus canciones favoritas gratis, donde quieras.</p>
+      </div>
 
+      <button id="btn_ingresar" class="btn-ingresar" onclick="window.location.href='play.html'">
+       Comenzar →
+      </button>
 
-      <section id="barra_progreso">
-        <span id="inicio">00:00</span>
-        <input type="range" id="progreso" min="0" max="100" value="0" />
-        <span id="final">03:42</span>
-      </section>
-
-
-      <section id="controles">
-        <button id="btn_repetir2">🔁</button>
-        <button id="btn_atras">⏮️</button>
-        <button id="btn_play">▶️</button>
-        <button id="btn_adelante">⏭️</button>
-        <button id="btn_lista">🎵</button>
-      </section>
     </div>
+  </section>
 
 
-    <div id="menu_lateral">
-      <h3>Lista de Canciones</h3>
-      <ul id="lista_lateral"></ul>
-    </div>
+  <div id="player_contenedor" class="oculto">
 
-    <script src="app.js"></script>
-  </body>
+  </div>
+
+  <script src="app.js"></script>
+</body>
 </html>
