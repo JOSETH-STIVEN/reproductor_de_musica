@@ -1,182 +1,260 @@
- body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        }
 
-        .phone-container {
-            width: 390px;
-            height: 820px;
-            background: linear-gradient(180deg, #8b5cf6 0%, #6d28d9 50%, #1f1f2e 100%);
-            border-radius: 50px;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-        }
+#body {
+  background: linear-gradient(to bottom, #8b5cf6, #3b1d9a);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-        .status-bar {
-            color: white;
-            font-size: 15px;
-            font-weight: 600;
-            padding: 15px 30px;
-        }
 
-        .top-nav {
-            opacity: 0.7;
-            color: white;
-            padding: 20px;
-        }
+#player_contenedor {
+  background: linear-gradient(to bottom, #8b5cf6, #1e0c63);
+  width: 340px;
+  height: 600px;
+  border-radius: 25px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  overflow: hidden;
+}
 
-        .nav-icon {
-            font-size: 24px;
-            cursor: pointer;
-            transition: opacity 0.3s;
-        }
 
-        .nav-icon:hover {
-            opacity: 1;
-        }
+#menu_superior {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
 
-        .album-art {
-            width: 280px;
-            height: 280px;
-            border-radius: 50%;
-            overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-            background: white;
-            margin: 20px auto;
-        }
+#menu_superior button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
 
-        .album-art img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+#menu_superior button:hover {
+  transform: scale(1.2);
+}
 
-        .song-info {
-            text-align: center;
-            color: white;
-        }
 
-        .song-title {
-            font-size: 28px;
-            font-weight: 700;
-        }
+#imagen_cancion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-        .artist-name {
-            font-size: 18px;
-            opacity: 0.8;
-        }
+#portada {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
 
-        .progress-bar-custom {
-            width: 100%;
-            height: 4px;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 2px;
-            position: relative;
-            cursor: pointer;
-        }
 
-        .progress-fill {
-            height: 100%;
-            background: white;
-            border-radius: 2px;
-            width: 4%;
-            position: relative;
-            transition: width 0.1s linear;
-        }
+#info_cancion {
+  text-align: center;
+  margin-top: 10px;
+}
 
-        .progress-dot {
-            width: 12px;
-            height: 12px;
-            background: white;
-            border-radius: 50%;
-            position: absolute;
-            right: -6px;
-            top: -4px;
-        }
+#titulo {
+  font-size: 20px;
+  margin: 10px 0 0;
+  font-weight: bold;
+}
 
-        .time-display {
-            color: white;
-            font-size: 13px;
-            opacity: 0.7;
-        }
+#artista {
+  font-size: 15px;
+  color: #ccc;
+  margin-top: 5px;
+}
 
-        .control-btn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 32px;
-            cursor: pointer;
-            opacity: 0.7;
-            transition: all 0.3s;
-        }
+#barra_progreso {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
 
-        .control-btn:hover {
-            opacity: 1;
-            transform: scale(1.1);
-        }
+#progreso {
+  width: 60%;
+  accent-color: #a855f7;
+  cursor: pointer;
+}
 
-        .play-pause-btn {
-            width: 80px;
-            height: 80px;
-            background: white;
-            border-radius: 50%;
-            color: #8b5cf6;
-            font-size: 40px;
-            cursor: pointer;
-            transition: all 0.3s;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            border: none;
-        }
 
-        .play-pause-btn:hover {
-            transform: scale(1.05);
-        }
+#controles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 10px;
+}
 
-        .bottom-nav {
-            position: absolute;
-            bottom: 0;
-            height: 70px;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(10px);
-            padding: 20px;
-        }
+#controles button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
 
-        .bottom-icon {
-            color: white;
-            font-size: 28px;
-            cursor: pointer;
-            opacity: 0.6;
-            transition: all 0.3s;
-        }
+#btn_play {
+  background: white;
+  color: #7c3aed;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
 
-        .bottom-icon:hover,
-        .bottom-icon.active {
-            opacity: 1;
-            transform: translateY(-2px);
-        }
+#controles button:hover {
+  transform: scale(1.2);
+}
 
-        .album-art img{
-            animation: imagen es linear infinite ;
-        }
 
-        
+#lista_canciones {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(15, 15, 15, 0.9);
+  height: 200px;
+  overflow-y: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 10px;
+}
 
-        @keyframes imagen{
-            0%{
-                transform: scale(0);
-            }
-            50%{
-                transform: scale(1.2);
-            }
-            100%{
-                transform: scale(0);
-            }
-        }
+#contenedor_lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item-cancion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.item-cancion:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.item-cancion img {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.item-cancion .nombre {
+  font-weight: bold;
+}
+
+.item-cancion .artista {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.oculto {
+  display: none;
+}
+
+
+#menu_lateral {
+  position: fixed;
+  top: 50%;
+  right: -320px; /* oculto inicialmente */
+  transform: translateY(-50%);
+  width: 300px;
+  height: 460px;
+  background: #14122b;
+  color: #fff;
+  border-radius: 20px 0 0 20px;
+  box-shadow: -6px 0 25px rgba(0, 0, 0, 0.6);
+  transition: right 0.4s ease;
+  padding: 15px;
+  overflow-y: auto;
+  z-index: 999;
+}
+
+#menu_lateral.visible {
+  right: 40px; 
+}
+
+#menu_lateral h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 5px;
+}
+
+
+#lista_lateral {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista_lateral li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#lista_lateral li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#lista_lateral img {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+#lista_lateral .info {
+  display: flex;
+  flex-direction: column;
+}
+
+#lista_lateral .info p {
+  margin: 0;
+  line-height: 1.2;
+}
+
+#lista_lateral .info .nombre {
+  font-weight: 600;
+}
+
+#lista_lateral .info .artista {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
