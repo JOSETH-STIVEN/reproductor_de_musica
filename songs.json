@@ -1,38 +1,74 @@
 [
   {
-    "title": "Déjame Ir",
-    "artist": "Nampa Básico",
-    "src": "audio/dejame_ir.mp3",
-    "cover": "img/nampa.jpg"
+    "id": 1,
+    "nombre": "Felices los 4",
+    "artista": "Maluma",
+    "duracion": "03:49",
+    "caratula": "img/felicesLos4.jpeg",
+    "cancion": "mp3/Maluma - Felices los 4 (Official Video) [t_jHrUE5IOk].mp3"
   },
   {
-    "title": "Hawái",
-    "artist": "Maluma",
-    "src": "audio/hawai.mp3",
-    "cover": "img/maluma.jpg"
+    "id": 2,
+    "nombre": "Hawái",
+    "artista": "Maluma",
+    "duracion": "03:21",
+    "caratula": "img/hawai.jpeg",
+    "cancion": "mp3/Maluma - Hawái (Official Video) [pK060iUFWXg].mp3"
   },
   {
-    "title": "Propuesta Indecente",
-    "artist": "Romeo Santos",
-    "src": "audio/propuesta_indecente.mp3",
-    "cover": "img/romeo.jpg"
+    "id": 3,
+    "nombre": "Corazón",
+    "artista": "Maluma",
+    "duracion": "03:32",
+    "caratula": "img/corazon.jpg",
+    "cancion": "mp3/Maluma - Corazón (Official Video) ft. Nego do Borel.mp3"
   },
   {
-    "title": "La Melodía",
-    "artist": "Nampa Básico",
-    "src": "audio/la_melodia.mp3",
-    "cover": "img/nampa2.jpg"
+    "id": 4,
+    "nombre": "Borró Cassette",
+    "artista": "Maluma",
+    "duracion": "03:15",
+    "caratula": "img/borroCassete.jpg",
+    "cancion": "mp3/Maluma - Borro Cassette (Official Video) [Xk0wdDTTPA0].mp3"
   },
   {
-    "title": "Felices los 4",
-    "artist": "Maluma",
-    "src": "audio/felices_los_4.mp3",
-    "cover": "img/maluma2.jpg"
+    "id": 5,
+    "nombre": "El Perdedor",
+    "artista": "Maluma",
+    "duracion": "03:54",
+    "caratula": "img/elPerdedor.jpg",
+    "cancion": "mp3/Maluma - El Perdedor (Cover Audio).mp3"
   },
   {
-    "title": "Eres Mía",
-    "artist": "Romeo Santos",
-    "src": "audio/eres_mia.mp3",
-    "cover": "img/romeo2.jpg"
+    "id": 6,
+    "nombre": "Carnaval",
+    "artista": "Maluma",
+    "duracion": "03:28",
+    "caratula": "img/carnaval.jpg",
+    "cancion": "mp3/Maluma - Carnaval.mp3"
+  },
+  {
+    "id": 7,
+    "nombre": "Cuatro Babys",
+    "artista": "Maluma",
+    "duracion": "03:42",
+    "caratula": "img/cuatroBabys.jpg",
+    "cancion": "mp3/Maluma - Cuatro Babys ft. Trap Capos, Noriel, Bryant Myers, Juhn.mp3"
+  },
+  {
+    "id": 8,
+    "nombre": "Sobrio",
+    "artista": "Maluma",
+    "duracion": "03:18",
+    "caratula": "img/sobrio.jpeg",
+    "cancion": "mp3/Maluma - Sobrio (Official Video).mp3"
+  },
+  {
+    "id": 9,
+    "nombre": "HP",
+    "artista": "Maluma",
+    "duracion": "03:11",
+    "caratula": "img/hp.jpeg",
+    "cancion": "mp3/Maluma - Sobrio (Official Video).mp3"
   }
 ]
